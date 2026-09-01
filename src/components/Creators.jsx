@@ -9,10 +9,6 @@ export default function Creators() {
           <h2 className="font-display text-3xl font-semibold tracking-tightest">
             Creators that move audiences
           </h2>
-          <p className="mt-4 text-ink-soft leading-relaxed">
-            These are sample creator profiles shown for portfolio purposes —
-            they are not currently partnered with Virtual Sponsor.
-          </p>
         </div>
 
         <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">

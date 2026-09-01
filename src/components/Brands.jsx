@@ -9,11 +9,6 @@ export default function Brands() {
           <h2 className="font-display text-3xl font-semibold tracking-tightest">
             Brands we've worked with
           </h2>
-          <p className="mt-4 text-ink-soft leading-relaxed">
-            The campaigns below are sample and portfolio work, shown to illustrate
-            the kind of creator campaigns Virtual Sponsor can build — not confirmed
-            client engagements.
-          </p>
         </div>
 
         <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">

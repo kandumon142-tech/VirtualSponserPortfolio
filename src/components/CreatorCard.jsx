@@ -3,22 +3,9 @@ export default function CreatorCard({ creator }) {
 
   return (
     <article className="border border-paper-line rounded-sm bg-white p-5 flex flex-col gap-4">
-      <div className="flex items-center gap-3">
-        <div className="w-12 h-12 rounded-full overflow-hidden border border-paper-line bg-paper-subtle flex-shrink-0">
-          <img
-            src={creator.image}
-            alt={`${creator.name} placeholder profile image`}
-            loading="lazy"
-            className="w-full h-full object-cover"
-            onError={(e) => {
-              e.currentTarget.src = "/images/placeholder-avatar.svg";
-            }}
-          />
-        </div>
-        <div>
-          <h3 className="font-display text-base font-semibold leading-tight">{creator.name}</h3>
-          <p className="text-xs text-ink-faint">{creator.category}</p>
-        </div>
+      <div>
+        <h3 className="font-display text-base font-semibold leading-tight">{creator.name}</h3>
+        <p className="text-xs text-ink-faint">{creator.category}</p>
       </div>
 
       <span className="self-start text-[11px] font-medium tracking-wide text-ink-soft border border-paper-line rounded-sm px-2 py-1">
