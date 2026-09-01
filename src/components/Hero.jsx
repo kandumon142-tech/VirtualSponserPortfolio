@@ -1,0 +1,68 @@
+import { GOOGLE_FORM_URL } from "../config/googleForm";
+import { creators } from "../data/creators";
+
+export default function Hero() {
+  const roster = creators.slice(0, 5);
+
+  return (
+    <section id="home" className="border-b border-paper-line">
+      <div className="mx-auto max-w-content px-6 lg:px-10 py-20 lg:py-28 grid lg:grid-cols-[1.1fr_0.9fr] gap-16 items-center">
+        <div>
+          <h1 className="font-display text-4xl sm:text-5xl lg:text-[3.4rem] leading-[1.06] tracking-tightest font-semibold max-w-xl">
+            Where brands meet creators.
+          </h1>
+          <p className="mt-6 text-lg text-ink-soft max-w-md leading-relaxed">
+            We connect brands with the right creators to build authentic campaigns that actually reach people.
+          </p>
+
+          <div className="mt-9 flex flex-col sm:flex-row gap-3">
+            <a
+              href={GOOGLE_FORM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center rounded-sm bg-ink text-white text-sm font-medium px-6 py-3.5 hover:bg-ink/90 transition-colors"
+            >
+              For Brands — Start a Campaign
+            </a>
+            <a
+              href="#creators"
+              className="inline-flex items-center justify-center rounded-sm border border-ink/20 text-ink text-sm font-medium px-6 py-3.5 hover:border-ink/50 transition-colors"
+            >
+              For Creators — Join the Network
+            </a>
+          </div>
+        </div>
+
+        <div className="relative">
+          <div className="grid grid-cols-3 gap-3 max-w-sm mx-auto">
+            {roster.map((creator, i) => (
+              <div
+                key={creator.name}
+                className={`aspect-square rounded-full overflow-hidden border border-paper-line bg-paper-subtle ${
+                  i % 2 === 0 ? "translate-y-3" : "-translate-y-3"
+                }`}
+              >
+                <img
+                  src={creator.image}
+                  alt=""
+                  aria-hidden="true"
+                  loading="lazy"
+                  className="w-full h-full object-cover"
+                  onError={(e) => {
+                    e.currentTarget.src = "/images/placeholder-avatar.svg";
+                  }}
+                />
+              </div>
+            ))}
+            <div className="aspect-square rounded-full border border-dashed border-paper-line flex items-center justify-center text-xs text-ink-faint -translate-y-3">
+              +more
+            </div>
+          </div>
+          <p className="mt-6 text-center text-xs text-ink-faint">
+            A sample of the creator roster — shown for portfolio purposes.
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+}

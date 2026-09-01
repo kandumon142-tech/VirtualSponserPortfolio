@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Fire-Boltt sample campaign placeholder image">
+  <rect width="800" height="500" fill="#F0EEE7"/>
+  <rect x="0.5" y="0.5" width="799" height="499" fill="none" stroke="#DAD6C9"/>
+  <text x="400" y="270" font-family="'Space Grotesk', sans-serif" font-size="120" font-weight="600" fill="#DAD6C9" text-anchor="middle">FB</text>
+  <text x="40" y="450" font-family="'Work Sans', sans-serif" font-size="20" fill="#57544C">Fire-Boltt — Wearables</text>
+  <text x="40" y="475" font-family="'Work Sans', sans-serif" font-size="14" fill="#57544C">Portfolio placeholder image</text>
+</svg>
