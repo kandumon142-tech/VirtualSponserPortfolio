@@ -4,7 +4,7 @@ export default function BrandCard({ brand }) {
       <div className="relative aspect-[8/5] bg-paper-subtle overflow-hidden">
         <img
           src={brand.image}
-          alt={`${brand.name} sample campaign visual`}
+          alt={`${brand.name} campaign visual`}
           loading="lazy"
           className="w-full h-full object-cover"
           onError={(e) => {
@@ -12,9 +12,6 @@ export default function BrandCard({ brand }) {
             e.currentTarget.className = "w-full h-full object-contain p-10";
           }}
         />
-        <span className="absolute top-3 left-3 text-[11px] font-medium tracking-wide bg-white/95 text-ink-soft border border-paper-line rounded-sm px-2 py-1">
-          {brand.label}
-        </span>
       </div>
 
       <div className="p-5 flex flex-col gap-3 flex-1">
