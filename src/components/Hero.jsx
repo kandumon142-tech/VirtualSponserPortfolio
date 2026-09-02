@@ -24,12 +24,6 @@ export default function Hero() {
             >
               For Brands — Start a Campaign
             </a>
-            <a
-              href="#creators"
-              className="inline-flex items-center justify-center rounded-sm border border-ink/20 text-ink text-sm font-medium px-6 py-3.5 hover:border-ink/50 transition-colors"
-            >
-              For Creators — Join the Network
-            </a>
           </div>
         </div>
 
@@ -38,29 +32,19 @@ export default function Hero() {
             {roster.map((creator, i) => (
               <div
                 key={creator.name}
-                className={`aspect-square rounded-full overflow-hidden border border-paper-line bg-paper-subtle ${
+                className={`aspect-square rounded-full border border-paper-line bg-paper-subtle flex items-center justify-center px-2 text-center ${
                   i % 2 === 0 ? "translate-y-3" : "-translate-y-3"
                 }`}
               >
-                <img
-                  src={creator.image}
-                  alt=""
-                  aria-hidden="true"
-                  loading="lazy"
-                  className="w-full h-full object-cover"
-                  onError={(e) => {
-                    e.currentTarget.src = "/images/placeholder-avatar.svg";
-                  }}
-                />
+                <span className="text-[11px] font-medium text-ink-soft leading-tight">
+                  {creator.name}
+                </span>
               </div>
             ))}
             <div className="aspect-square rounded-full border border-dashed border-paper-line flex items-center justify-center text-xs text-ink-faint -translate-y-3">
               +more
             </div>
           </div>
-          <p className="mt-6 text-center text-xs text-ink-faint">
-            A sample of the creator roster — shown for portfolio purposes.
-          </p>
         </div>
       </div>
     </section>

@@ -10,7 +10,7 @@ export const creators = [
     description:
       "A technology creator profile focused on practical tech education and product content.",
     image: "/images/creators/guiding-tech.svg",
-    profileUrl: null,
+    profileUrl: "https://youtube.com/@guidingtechcom?si=di7LMuPezX62gBxS",
   },
   {
     name: "Dhananjay Tech",
@@ -19,7 +19,7 @@ export const creators = [
     description:
       "A gadget-review creator profile centered on hands-on device breakdowns.",
     image: "/images/creators/dhananjay-tech.svg",
-    profileUrl: null,
+    profileUrl: "https://youtube.com/@dhananjay_tech?si=2qhkJVR0WJ-SVwfC",
   },
   {
     name: "Md Kashif Ali",
@@ -28,7 +28,7 @@ export const creators = [
     description:
       "An AI and emerging-tech creator profile aimed at an early-adopter audience.",
     image: "/images/creators/md-kashif-ali.svg",
-    profileUrl: null,
+    profileUrl: "https://youtube.com/@fkzcardecor?si=oRHSCaZ7E3oUi0i_",
   },
   {
     name: "Praval Sharma",
@@ -37,7 +37,7 @@ export const creators = [
     description:
       "A consumer-tech creator profile covering everyday product reviews.",
     image: "/images/creators/praval-sharma.svg",
-    profileUrl: null,
+    profileUrl: "https://youtube.com/@sharmajitechnical?si=FSSuEQBDOnbp9A3_",
   },
   {
     name: "Ruhez Amrelia",
@@ -46,6 +46,6 @@ export const creators = [
     description:
       "A tech creator profile focused on in-depth, audience-trusted reviews.",
     image: "/images/creators/ruhez-amrelia.svg",
-    profileUrl: null,
+    profileUrl: "https://youtube.com/@ruhezamrelia2641?si=FlO7nfMhx_lBepSz",
   },
 ];
