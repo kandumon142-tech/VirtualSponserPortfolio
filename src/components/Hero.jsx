@@ -1,6 +1,5 @@
 import { GOOGLE_FORM_URL } from "../config/googleForm";
 import { creators } from "../data/creators";
-import HeroNetwork from "./HeroNetwork";
 
 export default function Hero() {
   const roster = creators.slice(0, 5);
@@ -28,7 +27,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <HeroNetwork creators={roster} />
+        <div />
       </div>
     </section>
   );
