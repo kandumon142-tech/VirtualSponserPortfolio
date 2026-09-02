@@ -1,5 +1,6 @@
 import { GOOGLE_FORM_URL } from "../config/googleForm";
 import { creators } from "../data/creators";
+import HeroNetwork from "./HeroNetwork";
 
 export default function Hero() {
   const roster = creators.slice(0, 5);
@@ -27,35 +28,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="relative">
-          <div className="grid grid-cols-3 gap-3 max-w-sm mx-auto">
-            {roster.map((creator, i) => (
-              <div
-                key={creator.name}
-                className={`aspect-square rounded-full overflow-hidden border border-paper-line bg-paper-subtle ${
-                  i % 2 === 0 ? "translate-y-3" : "-translate-y-3"
-                }`}
-              >
-                <img
-                  src={creator.image}
-                  alt=""
-                  aria-hidden="true"
-                  loading="lazy"
-                  className="w-full h-full object-cover"
-                  onError={(e) => {
-                    e.currentTarget.src = "/images/placeholder-avatar.svg";
-                  }}
-                />
-              </div>
-            ))}
-            <div className="aspect-square rounded-full border border-dashed border-paper-line flex items-center justify-center text-xs text-ink-faint -translate-y-3">
-              +more
-            </div>
-          </div>
-          <p className="mt-6 text-center text-xs text-ink-faint">
-            A sample of the creator roster — shown for portfolio purposes.
-          </p>
-        </div>
+        <HeroNetwork creators={roster} />
       </div>
     </section>
   );
